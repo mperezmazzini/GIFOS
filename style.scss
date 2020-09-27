@@ -102,7 +102,7 @@ section.title{
 }
 
 section.search{
-    margin: 0 0 5em 0;
+    margin: 0 0 2em 0;
 
     .central-img{
         box-sizing: border-box;
@@ -136,5 +136,68 @@ section.search{
             color: #6B7989;
           }
     }
+}
 
+section.wordtrending{
+    h2{
+        font-family:'Montserrat', sans-serif;
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #572EE5;
+        margin: auto;
+        text-align: center;
+    }
+
+    p{
+        font-family:'Montserrat', sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        color: #572EE5;
+        margin: 0.5em 3em 1em 3em;
+        text-align: center;
+
+    }
+}
+
+section.divisor{
+        border: 0.5px solid #9CAFC3;
+        width: 50%;
+        margin: 4em auto 4em auto;
+    }
+
+section.suggestions{
+
+    h2{
+        font-family:'Montserrat', sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        color: #572EE5;
+        margin: 2em 2em 1em 2em;
+        text-align: center;
+    }
+
+    .imgs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+        width: 90%;
+        margin:auto;
+    }
+
+    .vermas{
+        font-family:'Montserrat', sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        border: 1px solid #572EE5;
+        border-radius: 40px;
+        width: 30%; 
+        height: 3em;
+        margin: 2em auto 2em auto;
+    
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #572EE5;
+          }
+
+    }
 }
