@@ -24,17 +24,28 @@
     .main .menu ul {
       display: none;
       position: absolute;
-      margin-top: 1em;
+      margin-top: 2em;
       width: 100%;
-      right: 0; }
+      right: 0;
+      opacity: 0.9;
+      background: #572EE5;
+      min-height: 100%; }
       .main .menu ul li {
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
         list-style: none;
-        height: 10vw;
-        line-height: 10vw;
+        height: 100%;
+        line-height: 4em;
         padding: 0.5em;
-        background: #0000EC;
         margin-bottom: -0.5em; }
+        .main .menu ul li .line {
+          display: block;
+          background-color: #ffffff;
+          height: 1px;
+          width: 15%;
+          margin: auto;
+          opacity: 0.5; }
       .main .menu ul a {
         color: white;
         text-decoration: none;
@@ -82,7 +93,6 @@ section.search {
     font-size: 1.5em;
     color: #6B7989;
     text-align: left;
-    vertical-align: middle;
     border: 1px solid #572EE5;
     border-radius: 40px;
     width: 80%;
@@ -126,14 +136,17 @@ section.suggestions .imgs {
   width: 90%;
   margin: auto; }
 section.suggestions .vermas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4em auto 4em auto;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: 600;
   border: 1px solid #572EE5;
   border-radius: 40px;
   width: 30%;
-  height: 3em;
-  margin: 2em auto 2em auto; }
+  height: 3em; }
   section.suggestions .vermas a:link, section.suggestions .vermas a:visited, section.suggestions .vermas a:hover, section.suggestions .vermas a:active {
     text-decoration: none;
     color: #572EE5; }
