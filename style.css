@@ -151,4 +151,44 @@ section.suggestions .vermas {
     text-decoration: none;
     color: #572EE5; }
 
+section.imgtrending {
+  background-color: #F3F5F8;
+  padding: 2em; }
+  section.imgtrending h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #572EE5;
+    margin: auto auto 1em auto;
+    text-align: center; }
+  section.imgtrending p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
+    margin: auto 4em 2em 4em;
+    text-align: center; }
+  section.imgtrending .slider {
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: 1fr; }
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 1em;
+  text-align: center;
+  margin: 1em; }
+footer .rrss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 10em 0 10em;
+  margin: -1em 0 0 0; }
+footer .bottommargin {
+  display: block;
+  background-color: #572EE5;
+  height: 0.5em; }
+
 /*# sourceMappingURL=style.css.map */
