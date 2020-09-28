@@ -133,8 +133,12 @@ section.suggestions .imgs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
+  align-items: center;
   width: 90%;
   margin: auto; }
+  section.suggestions .imgs img {
+    display: block;
+    margin: auto; }
 section.suggestions .vermas {
   display: flex;
   align-items: center;

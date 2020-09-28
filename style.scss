@@ -192,8 +192,14 @@ section.suggestions{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5em;
+        align-items: center;
         width: 90%;
         margin:auto;
+
+        img{
+            display: block;
+            margin: auto;
+        }
     }
 
     .vermas{
