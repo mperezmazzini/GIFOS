@@ -143,10 +143,14 @@ section.search{
         height: 2.5em;
         margin: auto;
 
-        a:link, a:visited, a:hover, a:active {
-            text-decoration: none;
+        .input{
+            border: 0;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;  
             color: #6B7989;
-          }
+            text-align: left;
+            outline: none;
+        }
     }
 }
 

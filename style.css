@@ -98,9 +98,13 @@ section.search {
     width: 80%;
     height: 2.5em;
     margin: auto; }
-    section.search .buscador a:link, section.search .buscador a:visited, section.search .buscador a:hover, section.search .buscador a:active {
-      text-decoration: none;
-      color: #6B7989; }
+    section.search .buscador .input {
+      border: 0;
+      font-size: 1em;
+      font-family: 'Roboto', sans-serif;
+      color: #6B7989;
+      text-align: left;
+      outline: none; }
 
 section.wordtrending h2 {
   font-family: 'Montserrat', sans-serif;
