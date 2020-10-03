@@ -18,7 +18,8 @@
     .main .logo img {
       display: flex;
       padding: 0;
-      margin: auto; }
+      margin: auto;
+      width: 100%; }
   .main .menu {
     padding: 1em; }
     .main .menu ul {
@@ -58,7 +59,8 @@
     .main .menu input[type=checkbox] {
       position: absolute;
       right: 2.5em;
-      opacity: 0; }
+      opacity: 0;
+      transform: scale(1.5); }
     .main .menu input[type=checkbox]:checked ~ ul {
       display: block; }
     .main .menu input[type=checkbox]:checked ~ .btn-menu {
@@ -187,7 +189,7 @@ footer p {
   font-weight: 400;
   padding: 1em;
   text-align: center;
-  margin: 1em; }
+  margin: 1.5em; }
 footer .rrss {
   display: flex;
   flex-direction: row;
