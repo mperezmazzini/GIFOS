@@ -70,27 +70,27 @@
     .main .menu input[type=checkbox]:checked ~ .btn-close {
       display: inline-block; }
 
-section.favoritos .favorito_logo {
+section.mis_gifos .misgifos_logo {
   display: flex;
   justify-content: center; }
-section.favoritos h2 {
+section.mis_gifos h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: 600;
   color: #572EE5;
   margin: 0.5em 2em 1em 2em;
   text-align: center; }
-section.favoritos .imgs {
+section.mis_gifos .imgs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
   align-items: center;
   width: 90%;
   margin: auto; }
-  section.favoritos .imgs img {
+  section.mis_gifos .imgs img {
     display: block;
     margin: auto; }
-section.favoritos .vermas {
+section.mis_gifos .vermas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +102,7 @@ section.favoritos .vermas {
   border-radius: 40px;
   width: 30%;
   height: 3em; }
-  section.favoritos .vermas a:link, section.favoritos .vermas a:visited, section.favoritos .vermas a:hover, section.favoritos .vermas a:active {
+  section.mis_gifos .vermas a:link, section.mis_gifos .vermas a:visited, section.mis_gifos .vermas a:hover, section.mis_gifos .vermas a:active {
     text-decoration: none;
     color: #572EE5; }
 
@@ -251,4 +251,4 @@ footer {
     width: 89%;
     margin: auto; } }
 
-/*# sourceMappingURL=style_favoritos.css.map */
+/*# sourceMappingURL=style_mis_gifos.css.map */

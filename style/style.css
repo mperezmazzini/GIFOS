@@ -189,27 +189,29 @@ section.imgtrending {
     section.imgtrending .slider img {
       margin: 0.5em 1em 4em 1em; }
 
-footer .p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  padding: 1em;
-  text-align: center; }
-footer .logos {
-  display: flex;
-  justify-content: center; }
-  footer .logos .rrsslogo {
-    margin: 0.5em; }
-  footer .logos #twitterHover {
-    display: none;
-    margin: 0; }
-footer .copyright {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  padding: 1em;
-  text-align: center;
-  margin: 1.5em; }
+footer {
+  margin-top: 2em; }
+  footer .p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1em;
+    text-align: center; }
+  footer .logos {
+    display: flex;
+    justify-content: center; }
+    footer .logos .rrsslogo {
+      margin: 0.5em; }
+    footer .logos #twitterHover {
+      display: none;
+      margin: 0; }
+  footer .copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1em;
+    text-align: center;
+    margin: 1.5em; }
 
 @media screen and (min-width: 620px) {
   .top-margin {
