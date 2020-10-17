@@ -3,7 +3,7 @@
   padding: 0; }
 
 .top-margin {
-  display: block;
+  display: none;
   background-color: #572EE5;
   height: 0.5em; }
 
@@ -14,11 +14,9 @@
   padding: 0 1em 0 0.5em; }
   .main .logo {
     display: block;
-    padding: 1em;
-    font-family: 'Montserrat', sans-serif; }
+    padding: 1em; }
     .main .logo img {
       display: flex;
-      font-family: 'Montserrat', sans-serif;
       padding: 0;
       margin: auto;
       width: 100%; }
@@ -72,84 +70,27 @@
     .main .menu input[type=checkbox]:checked ~ .btn-close {
       display: inline-block; }
 
-section.title h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  color: #572EE5;
-  margin: 2em 2em 1em 2em;
-  text-align: center; }
-  section.title h2 .gifos {
-    color: #5ED7C6; }
-
-section.search {
-  margin: 0 0 2em 0; }
-  section.search .central-img {
-    box-sizing: border-box;
-    padding: 0 3em 0em 3em; }
-    section.search .central-img img {
-      width: 100%;
-      margin: auto; }
-  section.search .buscador {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1em 0 1em;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    color: #6B7989;
-    text-align: left;
-    border: 1px solid #572EE5;
-    border-radius: 40px;
-    width: 80%;
-    height: 2.5em;
-    margin: auto; }
-    section.search .buscador .input {
-      border: 0;
-      font-size: 1em;
-      font-family: 'Roboto', sans-serif;
-      color: #6B7989;
-      text-align: left;
-      outline: none; }
-
-section.wordtrending h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #572EE5;
-  margin: auto;
-  text-align: center; }
-section.wordtrending p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  color: #572EE5;
-  margin: 0.5em 3em 1em 3em;
-  text-align: center; }
-
-section.divisor {
-  border: 0.5px solid #9CAFC3;
-  width: 50%;
-  margin: 4em auto 4em auto; }
-
-section.suggestions h2 {
+section.favoritos .favorito_logo {
+  display: flex;
+  justify-content: center; }
+section.favoritos h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   font-weight: 700;
   color: #572EE5;
-  margin: 2em 2em 1em 2em;
+  margin: 0em 2em 1em 2em;
   text-align: center; }
-section.suggestions .imgs {
+section.favoritos .imgs {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.5em;
   align-items: center;
   width: 90%;
   margin: auto; }
-  section.suggestions .imgs img {
+  section.favoritos .imgs img {
     display: block;
     margin: auto; }
-section.suggestions .vermas {
+section.favoritos .vermas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +102,7 @@ section.suggestions .vermas {
   border-radius: 40px;
   width: 30%;
   height: 3em; }
-  section.suggestions .vermas a:link, section.suggestions .vermas a:visited, section.suggestions .vermas a:hover, section.suggestions .vermas a:active {
+  section.favoritos .vermas a:link, section.favoritos .vermas a:visited, section.favoritos .vermas a:hover, section.favoritos .vermas a:active {
     text-decoration: none;
     color: #572EE5; }
 
@@ -183,36 +124,39 @@ section.imgtrending {
     margin: auto 4em 2em 4em;
     text-align: center; }
   section.imgtrending .slider {
-    max-width: 1000px;
+    width: 100%;
     display: flex;
     overflow: hidden; }
     section.imgtrending .slider img {
       margin: 0.5em 1em 4em 1em; }
 
-footer .p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  padding: 1em;
-  text-align: center; }
-footer .logos {
-  display: flex;
-  justify-content: center; }
-  footer .logos .rrsslogo {
-    margin: 0.5em; }
-  footer .logos #twitterHover {
-    display: none;
-    margin: 0; }
-footer .copyright {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  padding: 1em;
-  text-align: center;
-  margin: 1.5em; }
+footer {
+  margin-top: 2em; }
+  footer .p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1em;
+    text-align: center; }
+  footer .logos {
+    display: flex;
+    justify-content: center; }
+    footer .logos .rrsslogo {
+      margin: 0.5em; }
+    footer .logos #twitterHover {
+      display: none;
+      margin: 0; }
+  footer .copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1em;
+    text-align: center;
+    margin: 1.5em; }
 
 @media screen and (min-width: 620px) {
   .top-margin {
+    display: block;
     width: 89%;
     margin: auto;
     height: 0.3em; }
@@ -259,50 +203,31 @@ footer .copyright {
       .main .menu input[type=checkbox]:checked ~ .btn-close {
         display: none; }
 
-  section.title h2 {
-    font-size: 35px;
-    font-weight: 600;
-    padding: 0; }
-    section.title h2 .los-mejores {
-      display: block; }
-
-  section.search .central-img {
-    display: flex;
-    margin: auto; }
-    section.search .central-img img {
-      width: 399px; }
-  section.search .buscador {
-    width: 550px;
-    border: 1.5px solid #572EE5; }
-    section.search .buscador .input {
-      font-size: 1m; }
-
-  section.wordtrending {
-    padding: 3em 0 7em 0; }
-    section.wordtrending h2 {
-      font-size: 1.1em; }
-    section.wordtrending p {
-      font-size: 1.1em; }
-
-  section.suggestions {
-    display: none; }
-
-  section.divisor {
-    display: none; }
-
-  section.imgtrending {
-    width: 85%;
-    height: 35em;
-    margin: auto; }
-    section.imgtrending h2 {
-      font-size: 2em;
-      margin: 1em auto 0.5em auto; }
-    section.imgtrending p {
-      font-size: 1em; }
-    section.imgtrending .slider {
+  section.favoritos {
+    margin: 2em 0 2em 0; }
+    section.favoritos .imgs {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1em;
+      align-items: center;
+      width: 80%;
       margin: auto; }
+      section.favoritos .imgs img {
+        display: block;
+        margin: auto; }
+    section.favoritos section.imgtrending {
+      width: 85%;
+      height: 35em;
+      margin: auto; }
+      section.favoritos section.imgtrending h2 {
+        font-size: 2em;
+        margin: 1em auto 0.5em auto; }
+      section.favoritos section.imgtrending p {
+        font-size: 1em; }
+      section.favoritos section.imgtrending .slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto; }
 
   footer .footer {
     display: flex;
@@ -326,4 +251,4 @@ footer .copyright {
     width: 89%;
     margin: auto; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style_favoritos.css.map */

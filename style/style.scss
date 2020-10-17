@@ -18,9 +18,11 @@
     .logo{
         display: block;
         padding: 1em;
+        font-family:'Montserrat', sans-serif;
         
         img{
             display: flex;
+            font-family:'Montserrat', sans-serif;
             padding: 0;
             margin: auto;
             width: 100%;
@@ -259,8 +261,13 @@ section.imgtrending{
 
     .slider{
         max-width: 1000px;
-        display: grid;
-        grid-template-rows: 1fr;
+        display: flex;
+        overflow: hidden;
+
+            img{
+                margin: 0.5em 1em 4em 1em;
+            }
+       
     }
 }
 
@@ -458,7 +465,7 @@ footer{
         .slider{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            margin: 5em 0em 0em 10em;
+            margin: auto;
         }
 
     }
