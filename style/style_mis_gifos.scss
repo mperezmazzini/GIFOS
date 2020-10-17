@@ -310,7 +310,7 @@ footer{
         }
     }
 
-    section.favoritos{
+    section.mis_gifos{
         margin: 2em 0 2em 0;
 
         .imgs{
@@ -325,15 +325,16 @@ footer{
                 display: block;
                 margin: auto;
             }
- 
+        }  
     }  
 
  
     section.imgtrending{
         width: 85%;
-        height: 35em;
+        height: 30em;
         margin: auto;
         
+
             h2{
                 font-size: 2em;
                 margin: 1em auto 0.5em auto;
@@ -348,10 +349,13 @@ footer{
                 grid-template-columns: 1fr 1fr 1fr;
                 margin: auto;
 
+                img{
+                    display: flex;
+                    margin: auto;
+                }
             }
-        }
-
     }
+    
 
     footer{
         .footer{
@@ -390,7 +394,7 @@ footer{
             height: 0.4em;
             width: 89%;
             margin: auto;
-        }
-
+        }   
     }
+
 }

@@ -294,7 +294,7 @@ footer {
 
   section.imgtrending {
     width: 85%;
-    height: 35em;
+    height: 30em;
     margin: auto; }
     section.imgtrending h2 {
       font-size: 2em;
@@ -305,6 +305,9 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       margin: auto; }
+      section.imgtrending .slider img {
+        display: flex;
+        margin: auto; }
 
   footer .footer {
     display: flex;

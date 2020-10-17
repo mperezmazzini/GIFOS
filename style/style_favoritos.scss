@@ -289,7 +289,6 @@ footer{
 
             .btn-close{
                 display: none;
-        
             }
 
             input[type=checkbox] {
@@ -310,87 +309,87 @@ footer{
         }
     }
 
-    section.favoritos{
-        margin: 2em 0 2em 0;
+    section.favoritos{ 
+            margin: 2em 0 2em 0;
 
-        .imgs{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 1em;
-            align-items: center;
-            width: 80%;
-            margin:auto;
-    
-            img{
-                display: block;
-                margin: auto;
-            }
- 
-    }  
+                .imgs{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-gap: 1em;
+                    align-items: center;
+                    width: 80%;
+                    margin:auto;
+            
+                    img{
+                        display: block;
+                        margin: auto;
+                    }
+                }  
+        }  
 
  
     section.imgtrending{
-        width: 85%;
-        height: 35em;
-        margin: auto;
-        
-            h2{
-                font-size: 2em;
-                margin: 1em auto 0.5em auto;
-            }
+            width: 85%;
+            height: 30em;
+            margin: auto;
+            
+                h2{
+                    font-size: 2em;
+                    margin: 1em auto 0.5em auto;
+                }
 
-            p{
-                font-size: 1em;
-            }
+                p{
+                    font-size: 1em;
+                }
 
-            .slider{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin: auto;
+                .slider{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin: auto;
 
-            }
+                    img{
+                        display: flex;
+                        margin: auto;
+                    }
+                }
         }
-
-    }
+    
 
     footer{
-        .footer{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            .rrss{
+            .footer{
                 display: flex;
-                justify-content: space-between;  
+                justify-content: space-around;
+                align-items: center;
 
-                
-                .logos{
-                    align-items: center;
+                .rrss{
+                    display: flex;
+                    justify-content: space-between;  
 
-                    .rrsslogo{
-                        margin: 1em;
+                    
+                    .logos{
+                        align-items: center;
+
+                        .rrsslogo{
+                            margin: 1em;
+                        }
+
+                        #twitter{
+                            display: none;
+                        }
+
+                        #twitterHover{
+                            display: flex;
+                        }
                     }
-
-                    #twitter{
-                        display: none;
-                    }
-
-                    #twitterHover{
-                        display: flex;
-                    }
-
-
                 }
             }
-        }
 
-        .bottommargin{
-            display: block;
-            background-color: #572EE5;
-            height: 0.4em;
-            width: 89%;
-            margin: auto;
-        }
-
-    }
+            .bottommargin{
+                display: block;
+                background-color: #572EE5;
+                height: 0.4em;
+                width: 89%;
+                margin: auto;
+            }
+        }                     
 }

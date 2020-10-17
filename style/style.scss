@@ -448,7 +448,7 @@ footer{
 
     section.imgtrending{
         width: 85%;
-        height: 35em;
+        height: 30em;
         margin: auto;
         
 
@@ -467,6 +467,11 @@ footer{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             margin: auto;
+
+            img{
+                display: flex;
+                margin: auto;
+            }
         }
 
     }

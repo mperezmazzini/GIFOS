@@ -215,18 +215,22 @@ footer {
       section.favoritos .imgs img {
         display: block;
         margin: auto; }
-    section.favoritos section.imgtrending {
-      width: 85%;
-      height: 35em;
+
+  section.imgtrending {
+    width: 85%;
+    height: 30em;
+    margin: auto; }
+    section.imgtrending h2 {
+      font-size: 2em;
+      margin: 1em auto 0.5em auto; }
+    section.imgtrending p {
+      font-size: 1em; }
+    section.imgtrending .slider {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       margin: auto; }
-      section.favoritos section.imgtrending h2 {
-        font-size: 2em;
-        margin: 1em auto 0.5em auto; }
-      section.favoritos section.imgtrending p {
-        font-size: 1em; }
-      section.favoritos section.imgtrending .slider {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+      section.imgtrending .slider img {
+        display: flex;
         margin: auto; }
 
   footer .footer {
