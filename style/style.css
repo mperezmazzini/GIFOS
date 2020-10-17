@@ -185,49 +185,56 @@ section.imgtrending {
     display: grid;
     grid-template-rows: 1fr; }
 
-footer p {
+footer .p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 1em;
+  text-align: center; }
+footer .logos {
+  display: flex;
+  justify-content: center; }
+  footer .logos .rrsslogo {
+    margin: 0.5em; }
+  footer .logos #twitterHover {
+    display: none;
+    margin: 0; }
+footer .copyright {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 400;
   padding: 1em;
   text-align: center;
   margin: 1.5em; }
-footer .rrss {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0 10em 0 10em;
-  margin: -1em 0 0 0; }
-footer .bottommargin {
-  display: block;
-  background-color: #572EE5;
-  height: 0.5em; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 620px) {
   .top-margin {
     width: 89%;
     margin: auto;
     height: 0.3em; }
 
   .main {
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding: 0; }
     .main .logo img {
       transform: scale(1.1); }
     .main .menu {
       display: flex;
       align-items: center;
-      margin: 0; }
+      margin: 0;
+      padding: 0.5em; }
       .main .menu ul {
         display: flex;
         position: static;
         margin: 0em;
         background: none;
-        min-height: 0%; }
+        min-height: 0%;
+        padding: 0; }
         .main .menu ul li {
-          font-size: 1.5vh;
+          font-size: 1em;
           display: inline-block;
           align-content: center;
-          margin: 0 1.5vh 0 1.5vh; }
+          margin: 0 1em 0 1em; }
           .main .menu ul li .line {
             display: none; }
           .main .menu ul li a {
@@ -264,12 +271,14 @@ footer .bottommargin {
     width: 550px;
     border: 1.5px solid #572EE5; }
     section.search .buscador .input {
-      font-size: 2vh; }
+      font-size: 1m; }
 
   section.wordtrending {
     padding: 3em 0 7em 0; }
     section.wordtrending h2 {
-      font-size: 2vh; }
+      font-size: 1.1em; }
+    section.wordtrending p {
+      font-size: 1.1em; }
 
   section.suggestions {
     display: none; }
@@ -279,6 +288,7 @@ footer .bottommargin {
 
   section.imgtrending {
     width: 85%;
+    height: 35em;
     margin: auto; }
     section.imgtrending h2 {
       font-size: 2em;
@@ -287,6 +297,29 @@ footer .bottommargin {
       font-size: 1em; }
     section.imgtrending .slider {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 5em 0em 0em 10em; }
+
+  footer .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer .footer .rrss {
+      display: flex;
+      justify-content: space-between; }
+      footer .footer .rrss .logos {
+        align-items: center; }
+        footer .footer .rrss .logos .rrsslogo {
+          margin: 1em; }
+        footer .footer .rrss .logos #twitter {
+          display: none; }
+        footer .footer .rrss .logos #twitterHover {
+          display: flex; }
+  footer .bottommargin {
+    display: block;
+    background-color: #572EE5;
+    height: 0.4em;
+    width: 89%;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */

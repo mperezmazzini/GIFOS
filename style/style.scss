@@ -265,9 +265,30 @@ section.imgtrending{
 }
 
 footer{
-    
 
-    p{
+    .p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .logos{
+        display: flex;
+        justify-content: center;
+
+            .rrsslogo{
+                margin: 0.5em;
+            }
+
+            #twitterHover{
+                display: none;
+                margin: 0;
+            }
+    }
+
+    .copyright{
         font-family: 'Roboto', sans-serif;
         font-size: 1em;
         font-weight: 400;
@@ -275,24 +296,9 @@ footer{
         text-align: center;
         margin: 1.5em;
     }
-
-    .rrss{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 10em 0 10em;
-        margin: -1em 0 0 0;
-
-    }
-
-    .bottommargin{
-        display: block;
-        background-color: #572EE5;
-        height: 0.5em;
-    }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 620px) {
 
     .top-margin{
         width: 89%;
@@ -303,6 +309,7 @@ footer{
     .main{
 
         justify-content: space-around;
+        padding: 0;
 
         .logo{
 
@@ -315,6 +322,7 @@ footer{
             display: flex;
             align-items: center;
             margin: 0;
+            padding: 0.5em;
             
             ul{
                 display: flex;
@@ -322,12 +330,13 @@ footer{
                 margin: 0em;
                 background: none;
                 min-height: 0%;
+                padding: 0;
 
                 li{
-                    font-size: 1.5vh;
+                    font-size: 1em;
                     display: inline-block;
                     align-content: center;
-                    margin: 0 1.5vh 0 1.5vh;
+                    margin: 0 1em 0 1em;
 
                     .line{
                         display: none;
@@ -403,7 +412,7 @@ footer{
             border: 1.5px solid #572EE5;
 
             .input{
-                font-size: 2vh;
+                font-size: 1m;
             }
         }
     }
@@ -412,7 +421,11 @@ footer{
         padding: 3em 0 7em 0;
         
         h2{
-            font-size: 2vh;
+            font-size: 1.1em;
+        }
+        
+        p{
+            font-size: 1.1em;
         }
         
     }
@@ -427,21 +440,71 @@ footer{
 
     section.imgtrending{
         width: 85%;
+        height: 35em;
         margin: auto;
+        
 
         h2{
             font-size: 2em;
             margin: 1em auto 0.5em auto;
+
         }
 
         p{
+    
             font-size: 1em;
         }
 
         .slider{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            margin: 5em 0em 0em 10em;
         }
 
     }
+
+    footer{
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .rrss{
+                display: flex;
+                justify-content: space-between;  
+
+                
+                .logos{
+                    align-items: center;
+
+                    .rrsslogo{
+                        margin: 1em;
+                    }
+
+                    #twitter{
+                        display: none;
+                    }
+
+                    #twitterHover{
+                        display: flex;
+                    }
+
+
+                }
+            }
+        }
+
+        .bottommargin{
+            display: block;
+            background-color: #572EE5;
+            height: 0.4em;
+            width: 89%;
+            margin: auto;
+        }
+
+    }
+    
+
+
+
 }
